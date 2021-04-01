@@ -1,0 +1,17 @@
+{
+    "git.ignoreLimitWarning": true,
+    "[markdown]": {
+        "editor.formatOnSave": true,
+        "editor.wordWrap": "on",
+        "editor.renderWhitespace": "all",
+        "editor.acceptSuggestionOnEnter": "off"
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.stylelint": true
+    },
+    "debug.inlineValues": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.renderWhitespace": "boundary",
+    "editor.formatOnSave": true,
+}
