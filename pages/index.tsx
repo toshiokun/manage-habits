@@ -40,7 +40,7 @@ const Home: FC = () => {
       </div>
       <div>
         <div className="font-bold text-lg">目標達成状況(個別)</div>
-        <div className="font-bold text-base">英語勉強時間</div>
+        <div className="font-bold text-base">英語学習</div>
         <div className="justify-between flex">
           <span>
             <div>目標達成率</div>
