@@ -8,17 +8,66 @@ const Home: FC = () => {
   const dispatch = useDispatch<AppDispatch>();
 
   return (
-    <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
-      {[...Array(9)].map((_, index) => {
-        return (
-          <div
-            className="border-2 border-green-500 hover:bg-indigo-700"
-            key={index}
-          >
-            {index}
-          </div>
-        );
-      })}
+    <div>
+      <div>
+        <div className="font-bold text-lg">目標達成状況(全体)</div>
+        <div className="justify-between flex">
+          <span>
+            <div>目標達成率</div>
+            <div className="justify-between flex items-center">
+              <span>
+                <div>50%</div>
+                <div>目標: 105分/週</div>
+              </span>
+              <span className="inline-block h-2 w-96  bg-blue-100"></span>
+            </div>
+          </span>
+          <span>{">"}</span>
+        </div>
+        <div className="justify-between flex">
+          <span>
+            <div>直近7日間の達成状況</div>
+            <div className="justify-between flex items-center">
+              <span>
+                <div>70km</div>
+                <div>目標: 70km/週</div>
+              </span>
+              <span className="inline-block h-2 w-96  bg-blue-100"></span>
+            </div>
+          </span>
+          <span>{">"}</span>
+        </div>
+      </div>
+      <div>
+        <div className="font-bold text-lg">目標達成状況(個別)</div>
+        <div className="font-bold text-base">英語勉強時間</div>
+        <div className="justify-between flex">
+          <span>
+            <div>目標達成率</div>
+            <div className="justify-between flex items-center">
+              <span>
+                <div>50%</div>
+                <div>目標: 105分/週</div>
+              </span>
+              <span className="inline-block h-2 w-96  bg-blue-100"></span>
+            </div>
+          </span>
+          <span>{">"}</span>
+        </div>
+        <div className="justify-between flex">
+          <span>
+            <div>直近7日間の達成状況</div>
+            <div className="justify-between flex items-center">
+              <span>
+                <div>70km</div>
+                <div>目標: 70km/週</div>
+              </span>
+              <span className="inline-block h-2 w-96  bg-blue-100"></span>
+            </div>
+          </span>
+          <span>{">"}</span>
+        </div>
+      </div>
     </div>
   );
 };
